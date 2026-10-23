@@ -1,0 +1,13 @@
+class Person:
+    def show(self):
+        print("I am a person")
+
+class Student(Person):
+    def show(self):
+        print("I am a student")
+
+obj = Student()
+obj.show()
+
+OUTPUT
+I am a student
