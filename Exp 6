@@ -7,34 +7,34 @@ Algorithm
 6. Remove an element using pop().
 7. Iterate through the dictionary using a loop to print all records
 
-student = {
-    "name": "Ananya",
-    "roll_no": 101,
+student_details = {
+    "name": "Rahul",
+    "roll_no": 102,
     "course": "BCA",
     "marks": 85
 }
-print("Original Dictionary:", student)
 
-print("Student Name:", student["name"])
-print("Course (using get()):", student.get("course"))
+print("Student Details:", student_details)
 
-student["marks"] = 92
-student["email"] = "ananya@jain.edu"
-print("After modification/addition:", student)
+print("Name of Student:", student_details["name"])
+print("Course Name:", student_details.get("course"))
 
-print("Keys:", list(student.keys()))
-print("Values:", list(student.values()))
-print("Items (Key-Value pairs):", list(student.items()))
+student_details.update({"marks": 92})
+student_details["email"] = "rahul@jain.edu"
 
-if "course" in student:
-    print("Key 'course' exists in the dictionary.")
+print("Updated Student Details:", student_details)
 
-removed_value = student.pop("roll_no")
-print(f"Removed Roll No value: {removed_value}")
-print("Dictionary after pop:", student)
+print("All Keys:", list(student_details.keys()))
+print("All Values:", list(student_details.values()))
+print("Dictionary Items:", list(student_details.items()))
 
-print("\n--- Iterating through dictionary ---")
-for key, value in student.items():
-    print(f"{key}: {value}")
+if "course" in student_details:
+    print("Course key is present.")
 
-OUTPUT
+deleted_roll = student_details.pop("roll_no")
+print("Deleted Roll Number:", deleted_roll)
+print("After Removing Roll Number:", student_details)
+
+print("\n--- Student Information ---")
+for item, data in student_details.items():
+    print(f"{item}: {data}")
