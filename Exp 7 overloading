@@ -1,0 +1,12 @@
+class Calculator:
+    def add(self, a, b, c=0):
+        return a + b + c
+
+obj = Calculator()
+
+print(obj.add(2, 3))
+print(obj.add(2, 3, 4))
+
+OUTPUT
+5
+9
