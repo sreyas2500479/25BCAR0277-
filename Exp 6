@@ -38,3 +38,20 @@ print("After Removing Roll Number:", student_details)
 print("\n--- Student Information ---")
 for item, data in student_details.items():
     print(f"{item}: {data}")
+
+Student Details: {'name': 'Rahul', 'roll_no': 102, 'course': 'BCA', 'marks': 85}
+Name of Student: Rahul
+Course Name: BCA
+Updated Student Details: {'name': 'Rahul', 'roll_no': 102, 'course': 'BCA', 'marks': 92, 'email': 'rahul@jain.edu'}
+All Keys: ['name', 'roll_no', 'course', 'marks', 'email']
+All Values: ['Rahul', 102, 'BCA', 92, 'rahul@jain.edu']
+Dictionary Items: [('name', 'Rahul'), ('roll_no', 102), ('course', 'BCA'), ('marks', 92), ('email', 'rahul@jain.edu')]
+Course key is present.
+Deleted Roll Number: 102
+After Removing Roll Number: {'name': 'Rahul', 'course': 'BCA', 'marks': 92, 'email': 'rahul@jain.edu'}
+
+--- Student Information ---
+name: Rahul
+course: BCA
+marks: 92
+email: rahul@jain.edu
